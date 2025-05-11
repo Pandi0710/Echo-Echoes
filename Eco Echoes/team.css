@@ -1,0 +1,224 @@
+ 
+
+#title{
+    color: rgba(255, 255, 255, 0.678);
+    text-shadow: 5px 5px 5px black;
+    font-size: 75px;
+    position: absolute;
+    top: 0px;
+    left:100px
+}
+
+img{
+    height: auto;
+    width:280px;
+    border-radius: 10px;
+    z-index: 4;
+}
+
+#infostudent1 , #infostudent2, #infostudent3, #infostudent4{
+    color: rgba(2, 2, 2, 0.747);
+    display: none;
+    background-color: #ffffff88;
+    padding: 10px;
+}
+
+
+/* 
+#boxes{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    display: flex;
+    gap:5%;
+    margin: 10px;
+    position: relative;
+    top:80%;
+    left:7.5%;
+} */
+#boxes {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center;     /* Vertically center if container has height */
+  flex-wrap: wrap;         /* Optional: wrap to next line on smaller screens */
+  gap: 20px;               /* Optional: space between images */
+  margin-top: 300px;        /* Optional: spacing from top */
+}
+
+#boxes img {
+    /* Adjust as needed */
+  height: auto;
+  border-radius: 10px; /* Optional: rounded corners */
+}
+
+
+
+
+#student1:hover ,#student2:hover, #student3:hover, #student4:hover{
+    transform: translateY(-20px);
+    
+    
+}
+
+#student1:hover #infostudent1, #student2:hover #infostudent2,#student3:hover #infostudent3,#student4:hover #infostudent4{
+    
+    display: block;
+}
+
+
+
+
+#student1, #student2, #student3, #student4{
+    
+    border-radius: 10px;
+    
+}
+
+
+
+
+.footer {
+    background-color: rgb(13, 56, 29);
+    font-size: 1.5rem;
+    font-weight: 200;
+    padding: 40px;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0px;
+}
+
+.footer-image {
+    text-align: center; 
+    margin-top: 10px; 
+}
+
+.footer-image img {
+    width: 60px; 
+    height: auto; 
+    border-radius: 20px; 
+    padding-right: 5px; 
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 2;
+    
+}
+.footer .footer-content .footer-links ul,
+.footer .footer-content .footer-social ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    display: inline;
+}
+.footer .footer-content .footer-links ul li,
+.footer .footer-content .footer-social ul li {
+    margin-right: 20px;
+    display: inline;
+}
+.footer .footer-content .footer-links ul li a,
+.footer .footer-content .footer-social ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer .footer-content .footer-links ul li a:hover,
+.footer .footer-content .footer-social ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer .footer-bottom p {
+    margin: 10;
+    font-size: 1.5rem;
+    color: white
+}
+
+
+
+
+.nav {
+    padding: 0px;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 9999;
+    top: 0; 
+    width: 100%;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    box-shadow: 1 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.nav img {
+    float: left; 
+    margin-left: 10px !important; 
+    width: 60px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.nav ul {
+    display: inline-flex;
+    width: 1100px;
+}
+
+.nav ul li {
+    position: relative;
+    list-style: none;
+    width: 100%;
+    height: 50px;
+    z-index: 1;
+    
+}
+
+.nav ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.nav ul li a .icon {
+    position: relative;
+    color: rgb(0, 0, 0);
+    display: block;
+    line-height: 55px;
+    font-size: 30px;
+    text-align: center;
+    transform: translateY(0);
+}
+
+.nav ul li:hover a .icon {
+    transform: translateY(-10px);
+}
+
+.nav ul li a .text {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(0px);
+}
+
+.nav ul li:hover a .text {
+    opacity: 1;
+    transform: translateY(10px);
+}

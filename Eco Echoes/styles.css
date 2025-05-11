@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.nav {
+    padding: 0px;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 9999;
+    top: 0; 
+    width: 100%;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    box-shadow: 1 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.nav img {
+    float: left; 
+    margin-left: 10px !important; 
+    width: 60px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.nav ul {
+    display: inline-flex;
+    width: 1100px;
+}
+
+.nav ul li {
+    position: relative;
+    list-style: none;
+    width: 100%;
+    height: 50px;
+    z-index: 1;
+    
+}
+
+.nav ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.nav ul li a .icon {
+    position: relative;
+    color: rgb(0, 0, 0);
+    display: block;
+    line-height: 55px;
+    font-size: 30px;
+    text-align: center;
+    transform: translateY(0);
+}
+
+.nav ul li:hover a .icon {
+    transform: translateY(-10px);
+}
+
+.nav ul li a .text {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(0px);
+}
+
+.nav ul li:hover a .text {
+    opacity: 1;
+    transform: translateY(10px);
+}
+
+.trail-sign-icon {
+    display: block;
+    margin: 10px auto 30px; 
+    font-size: 6rem; 
+}
+.title-container {
+    text-align: center;
+    margin-top: 85px; 
+    margin-bottom: 100px; 
+    background-color: rgba(20, 20, 20, 0.5); 
+    padding: 20px; 
+    border-radius: 10px; 
+}
+.images-logo-title {
+    position: relative; 
+}
+
+.images-logo-title img {
+    max-width: 100px; 
+    height: auto; 
+    position: relative; 
+    top: 250px; 
+}
+.life-on-land {
+    text-align: center; 
+    margin-top: 20px; 
+    padding-bottom: 10px;
+    margin-bottom: 100px;
+}
+
+.life-on-land img {
+    max-width: 100px; 
+    height: auto; 
+    margin: 1 10px; 
+}
+
+
+.whispers-title {
+    font-family: "Poppins", sans-serif; 
+    font-size: 60px; 
+    font-weight: bold; 
+    color: rgb(255, 255, 255); 
+    margin-bottom: 5px; 
+    margin-top: 250px;
+    text-align: center;
+    padding-bottom: 0px;
+}
+
+.title-two {
+    font-size: 1.2rem;
+    font-style: italic;
+    text-align: center;
+    margin-top: 0; 
+    margin-bottom: 2px; 
+    color: #fff;
+    padding-bottom: 250px;
+}
+
+
+.mission-one{
+    display: block;
+    margin: 10px auto 10px; 
+    font-size: 1.5rem;
+    margin-left: 660px;
+    color: #fff;
+
+}
+.mission-box {
+    background-color: rgba(36, 35, 35, 0.7); 
+    margin: 100px;
+    margin-left: 300px;
+    margin-right: 300px;
+    border-radius:px; 
+    margin-bottom: 100px;
+    padding-bottom: 5px;
+    color: #fff;
+}
+
+.trail-sign-icon {
+        display: block;
+        margin: 10px auto 5px; 
+        font-size: 1rem; 
+        text-align: center; 
+        color: #ffffff; 
+        margin-top: 5px;
+}
+
+
+.mission-box ion-icon {
+    font-size: 5rem; 
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+.mission-one {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 20px; 
+    text-decoration: underline;
+}
+
+.mission {
+    font-size: 1.5rem; 
+    font-weight: 300; 
+    text-align: center;
+    margin-top: 20px; 
+    margin-bottom: 160px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    max-width: 600px; 
+    padding-left: 10px; 
+    padding-right: 10px; 
+}
+.mission-one{
+    margin-left: 1px;
+}
+.vision {
+    text-align: center;
+    margin-top: 100px; 
+    margin-bottom: 100px; 
+    font-size: 1.5rem;
+}
+
+
+.vision-box {
+    background-color: rgba(35, 33, 33, 0.7); 
+    padding: 10px; 
+    box-shadow: 0 0 5px rgba(91, 90, 90, 0.3); 
+    margin-top: 10px;
+    position: relative;
+}
+.eye-icon {
+    position: absolute; 
+    bottom: 93%;
+    left: 47%; 
+    font-size: 5rem; 
+    color: #ffffff; 
+}
+
+.vision {
+    text-align: center; 
+    margin-top: 20px; 
+    font-size: 1.5rem; 
+    color: #ffffff; 
+}
+
+.targets {
+    display: grid;
+    gap: 3rem; 
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
+    margin: 0 auto;
+    margin-left: 150px;
+    margin-bottom: 100px;
+}
+
+.targets div {
+    padding: 30px; 
+    background-color: #f2f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+}
+
+.targets h2 {
+    font-size: 1.2rem;
+    font-weight: 600; 
+    margin-bottom: 10px;
+    color: #333; 
+}
+
+.targets p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0; 
+}
+
+.targets div:hover {
+    transform: translateY(-10px); 
+    transition: transform 0.5s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+}
+
+
+.footer {
+    background-color: rgb(15, 62, 33);
+    font-size: 20px;
+    padding: 40px;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 10;
+}
+
+.footer-image {
+    text-align: center; 
+    margin-top: 10px; 
+}
+
+.footer-image img {
+    width: 60px; 
+    height: auto; 
+    border-radius: 20px; 
+    padding-right: 5px; 
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 2;
+    
+}
+.footer .footer-content .footer-links ul,
+.footer .footer-content .footer-social ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    display: inline;
+}
+.footer .footer-content .footer-links ul li,
+.footer .footer-content .footer-social ul li {
+    margin-right: 20px;
+    display: inline;
+}
+.footer .footer-content .footer-links ul li a,
+.footer .footer-content .footer-social ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer .footer-content .footer-links ul li a:hover,
+.footer .footer-content .footer-social ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer .footer-bottom p {
+    margin: 110;
+    color: #fff;
+}
+

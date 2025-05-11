@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deserts</title>
+  <link rel="stylesheet" href="desert.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="logo6.png" />
+  <script defer src="desert.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="gallery">
+      <div id="image1" class="image">
+        <div class="img-box1"></div>
+      </div>
+      <div id="image2" class="image">
+        <div class="img-box2"></div>
+      </div>
+      <div id="image3" class="image">
+        <div class="img-box3"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal">
+    <div class="modal">
+      <span class="close">&times;</span>
+      <!-- Copy From Here -->
+      <div class="font-selector">
+        <span class="font-title">Select Font</span>
+        <!-- <p class="font-para">
+            Enhance your reading experience by selecting your favorite font
+            style. Use the font selector above to personalize the text to your
+            liking. Experiment with different fonts until you find the one that
+            suits your taste and makes reading a pleasure.
+          </p> -->
+        <select name="font-selector" id="font-selector">
+          <option value="sans-serif">Sans Serif</option>
+          <option value="monospace">Monospace</option>
+          <option value="cursive">Cursive</option>
+          <option value="fantasy">Fantasy</option>
+          <option value="Figtree">Figtree</option>
+        </select>
+      </div>
+      <!-- Copy From Here -->
+      <div id="modal-body" class="modal-body"></div>
+      <!-- Copy From Here -->
+      <div class="color-picker">
+        <span class="color-title">Pick a Color</span>
+        <!-- <p class="color-para">
+            Discover the power of customization! you can easily select your
+            preferred colors to tailor your browsing experience. Explore a
+            spectrum of hues until you find the perfect palette that resonates
+            with your style. Make your browsing experience uniquely yours with
+            custom colors!
+          </p> -->
+        <div class="input-group">
+          <input type="color" id="color-picker" name="color-picker" value="#ffffff" />
+          <button class="check-btn">&check;</button>
+        </div>
+      </div>
+      <!-- Copy From Here -->
+    </div>
+  </div>
+</body>
+
+</html>

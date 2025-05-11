@@ -1,0 +1,55 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wild Life</title>
+  <link rel="stylesheet" href="wildlife.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="logo6.png" />
+  <script defer src="wildlife.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="gallery">
+      <div id="image1" class="image">
+        <div class="img-box1"></div>
+      </div>
+      <div id="image2" class="image">
+        <div class="img-box2"></div>
+      </div>
+      <div id="image3" class="image">
+        <div class="img-box3"></div>
+      </div>
+      <div id="image4" class="image">
+        <div class="img-box4"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal">
+    <div class="modal">
+      <span class="close">&times;</span>
+      <div class="font-selector">
+        <span class="font-title">Select Font</span>
+        <select name="font-selector" id="font-selector">
+          <option value="sans-serif">Sans Serif</option>
+          <option value="monospace">Monospace</option>
+          <option value="cursive">Cursive</option>
+          <option value="fantasy">Fantasy</option>
+          <option value="Figtree">Figtree</option>
+        </select>
+      </div>
+      <div id="modal-body" class="modal-body"></div>
+      <div class="color-picker">
+        <span class="color-title">Pick a Color</span>
+        <div class="input-group">
+          <input type="color" id="color-picker" name="color-picker" value="#ffffff" />
+          <button class="check-btn">&check;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

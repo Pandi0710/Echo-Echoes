@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/mountains/mountainrange.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery {
+    width: 1000px;
+    height: 500px;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: none;
+    align-items: center;
+    justify-items: center;
+    overflow-x: scroll;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.gallery::-webkit-scrollbar {
+    height: 10px;
+    /* display: none; */
+}
+
+.gallery::-webkit-scrollbar-track {
+    background: black;
+}
+
+.gallery::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: #006851;
+}
+
+.gallery::-webkit-scrollbar-thumb:hover {
+    background: #008f70;
+}
+
+.img-box1 {
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 40px;
+    background: url("images/mountains/everest.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.img-box2 {
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 40px;
+    background: url("images/mountains/elbrus.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.img-box3 {
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 40px;
+    background: url("images/mountains/knuckles.png");
+    background-size: cover;
+    background-position: center;
+}
+
+h3 {
+    position: relative;
+    top: 70%;
+    text-shadow: 1px 1px 5px black;
+    font-size: 30px;
+}
+
+p {
+    position: relative;
+    top: 72%;
+    width: 100%;
+    text-shadow: 1px 1px 5px black;
+    font-size: 20px;
+}
+
+.img-box1:hover {
+    width: 300px;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.img-box2:hover {
+    width: 300px;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.img-box3:hover {
+    width: 300px;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+#modal {
+    display: none;
+}
+
+.modal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 999;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(51, 51, 51, 0.932);
+    gap: 20px;
+}
+
+.modal-body {
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    padding-left: 25px;
+    padding-right: 15px;
+}
+
+.font-selector {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px 30px;
+    max-width: 20%;
+    border-radius: 20px;
+}
+
+.font-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.font-para {
+    margin-bottom: 20px;
+    text-align: justify;
+    color: rgb(82, 82, 82);
+    line-height: 1.4;
+}
+
+.font-selector select {
+    font-size: 20px;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.color-picker {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px 30px;
+    max-width: 20%;
+    border-radius: 20px;
+}
+
+.color-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.color-para {
+    margin-bottom: 20px;
+    text-align: justify;
+    color: rgb(82, 82, 82);
+    line-height: 1.4;
+}
+
+.color-picker input {
+    width: 100%;
+    height: 40px;
+    border-radius: 7px;
+    padding: 6px 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.check-btn {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 0px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.close {
+    position: absolute;
+    z-index: 99999;
+    font-size: 50px;
+    color: white;
+    top: 0;
+    right: 20px;
+    cursor: pointer;
+}

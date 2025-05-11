@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo-Echoes - Shop & Learn for Wildlife</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="body">
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <h1 class="nav-logo">Echo-Echoes</h1>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#products" class="nav-link">Shop</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero hero-bg">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Echo-Echoes: Shop & Learn</h1>
+            <p class="hero-text">Discover wildlife-themed products and dive into conservation education.</p>
+            <a href="#products" class="hero-button">Explore Products</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features features-bg">
+        <div class="features-container">
+            <h2 class="features-title">Why Echo-Echoes?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    
+                    <img src="shamless.png" alt="E-commerce Icon" class="feature-icon">
+                    <h3 class="feature-title">Seamless Shopping</h3>
+                    <p class="feature-text">Browse and buy unique wildlife-inspired products with ease.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="edu.png" alt="Education Icon" class="feature-icon">
+                    <h3 class="feature-title">Educational Insights</h3>
+                    <p class="feature-text">Learn about conservation efforts with every purchase.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="html.png" alt="Responsive Icon" class="feature-icon">
+                    <h3 class="feature-title">Engaging Experience</h3>
+                    <p class="feature-text">Enjoy a responsive, interactive platform built with HTML, CSS, and JavaScript.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conservation Education Section -->
+    <section id="education" class="education education-bg">
+        <div class="overlay"></div>
+        <div class="education-container">
+            <h2 class="education-title">Conservation Education</h2>
+            <p class="education-text">
+                At Echo-Echoes, every product purchase supports wildlife conservation. Learn about endangered species, habitat preservation, and sustainable practices through our educational content. Together, we can make a difference!
+            </p>
+            <button onclick="showConservationFact()" class="education-button">Get a Fact</button>
+            <p id="fact-display" class="fact-text"></p>
+        </div>
+    </section>
+
+    <!-- Product Showcase Section -->
+    <section id="products" class="products products-bg">
+        <div class="products-container">
+            <h2 class="products-title">Wildlife-Themed Products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="product2.jpeg" alt="Toucan T-Shirt" class="product-image">
+                    <h3 class="product-name">Toucan T-shirt</h3>
+                    <p class="product-price">$19.99</p>
+                    <button onclick="addToCart('Toucan T-Shirt', 19.99)" class="product-button">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="product10.jpeg" alt="Raindeer Mug" class="product-image">
+                    <h3 class="product-name">Raindeer Mug</h3>
+                    <p class="product-price">$12.99</p>
+                    <button onclick="addToCart('Raindeer Mug', 12.99)" class="product-button">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="product14.jpeg" alt="Shell bowl" class="product-image">
+                    <h3 class="product-name">Shell Bowl</h3>
+                    <p class="product-price">$9.99</p>
+                    <button onclick="addToCart('Shell bowl', 9.99)" class="product-button">Add to Cart</button>
+                </div>
+            </div>
+            <p id="cart-display" class="cart-text"></p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact contact-bg">
+        <div class="overlay"></div>
+        <div class="contact-container">
+            <h2 class="contact-title">Get in Touch</h2>
+            <div class="contact-form">
+                <div class="form-group">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" id="name" class="form-input" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" class="form-input" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" class="form-textarea" rows="5" placeholder="Your Message"></textarea>
+                </div>
+                <button onclick="submitForm()" class="form-button">Send Message</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 Echo-Echoes. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
